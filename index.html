@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Feedback Survey</h1>
+        <p id="description">Please help us improve by taking this survey</p>
+        
+        <form id="survey-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Age Field -->
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="10" max="99">
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <p>How did you find us?</p>
+                <label>
+                    <input type="radio" name="source" value="social"> Social Media
+                </label>
+                <label>
+                    <input type="radio" name="source" value="friend"> Friend
+                </label>
+                <label>
+                    <input type="radio" name="source" value="other"> Other
+                </label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group">
+                <p>What would you like to see improved?</p>
+                <label>
+                    <input type="checkbox" value="ui"> User Interface
+                </label>
+                <label>
+                    <input type="checkbox" value="content"> Content
+                </label>
+                <label>
+                    <input type="checkbox" value="performance"> Performance
+                </label>
+            </div>
+
+            <!-- Dropdown -->
+            <div class="form-group">
+                <label for="rating">Rate your experience:</label>
+                <select id="rating">
+                    <option value="">Select an option</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            </div>
+
+            <!-- Text Area -->
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html> 
